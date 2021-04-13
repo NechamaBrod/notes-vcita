@@ -6,19 +6,23 @@ This API use localStorage and cookie
 
 The localStorage is in the server folder
 
+# notice
 
-The length of note is limit at 10000 chars
+>The length of note is limit at 1000000 chars
+>
+>The first id is 10000
 
->Clone this folder
->
->Run it as a node server
->`
->node .
->`
->
->The service run at 5000 port in your server
->
->and enjoy...
+# usage
+Clone this folder
+
+Run it as a node server
+`
+node .
+`
+
+The service run at 5000 port in your server
+
+and enjoy...
 
 # function
 |__http Act__|__route__|__do__|__param__|__res__|
