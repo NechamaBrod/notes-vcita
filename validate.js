@@ -21,7 +21,7 @@ exports.checkContains = (req, res, next) => {
 exports.checkLength = (req, res, next) => {
     console.log('validate length')
     try {
-        if (req.body.text.length < 10000) {
+        if (req.body.text.length < 1000000) {
             return next();
         }
         else {
