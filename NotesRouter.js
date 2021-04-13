@@ -26,7 +26,9 @@ router.post('/create',
         console.log("create new and send Id");
         try {
             localStorage.setItem(nodeCookie.get(req, 'userId') + '_' + notesIds, req.body.text)
-            res.json({ id: notesIds++ });
+            res.json({ 
+                id: notesIds++
+            });
         } catch (error) {
             console.log(error);
             res.status(500).send(error);
@@ -67,8 +69,7 @@ router.put('/update',
             const id = req.body.Id;
             localStorage.setItem(nodeCookie.get(req, 'userId') + '_' + id, req.body.text)
             res.json({
-                id: id,
-                note: localStorage.getItem(nodeCookie.get(req, 'userId') + '_' + id)
+                id: id
             });
         } catch (error) {
             console.log(error);
