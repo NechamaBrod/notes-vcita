@@ -8,7 +8,7 @@ localStorage = new LocalStorage('./notes');
 const nodeCookie = require('node-cookie')
 
 let notes = {};
-let notesIds = 10000;
+let notesIds = 1000000;
 
 router.get('/', function (req, res) {
     res.send("what are you want to do?" +
